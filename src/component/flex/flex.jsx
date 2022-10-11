@@ -1,7 +1,7 @@
 import * as S from './flex.style'
 
-const Flex= ({gap, padding, children, align, shadow, vertical, justify}) => {
-  return (<S.Flex gap={gap} padding={padding} align={align} shadow={shadow} justify={justify} vertical={vertical}>
+const Flex= ({gap,width, padding, children, align, shadow, vertical, justify, wrap}) => {
+  return (<S.Flex gap={gap} width={width} padding={padding} align={align} wrap={wrap} shadow={shadow} justify={justify} vertical={vertical}>
         {children}
     </S.Flex>);
 };

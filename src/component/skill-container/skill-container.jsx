@@ -8,7 +8,7 @@ const SkillContainer = ({ s }) => {
           return (
             <Flex gap={8} vertical key={key}>
               <Text type='h4'>{category}</Text>
-              <Flex gap={8}>
+              <Flex gap={8} wrap={true}>
                 {skillList.map(({ color, label }, key) => {
                   return <Pill color={color} label={label} key={key} />;
                 })}

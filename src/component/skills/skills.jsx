@@ -23,14 +23,13 @@ const Skills = () => {
       >
         🏆
       </Button>
-      <S.Skills>
-        <Box
+        <Box padding={8}
           aboutTitle={ability.sectionTitle}
           descriptionList={ability.description}
         ></Box>
-      </S.Skills>
       <Divider gap={16}/>
-        <SkillContainer s={ability.skillTypeList}/> 
+        <SkillContainer s={ability.skillTypeList}/>
+        <Box legend={ability.color}>legend={ability.labels}</Box>
     </Flex>
   );
 };
