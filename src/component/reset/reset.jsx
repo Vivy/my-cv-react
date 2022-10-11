@@ -1,5 +1,5 @@
-// import * as S from 'styled-components';
+import * as S from './reset.style';
 
-// const Reset = () => <S.Reset/>;
+const Reset = () => <S.Reset/>;
 
-// export default Reset
+export default Reset
