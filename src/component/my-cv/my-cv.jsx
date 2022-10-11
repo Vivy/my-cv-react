@@ -1,6 +1,6 @@
 
   import content from "../asset/content.json"
-  import { Button, Header, Welcome, Flex, Reset } from '..'
+  import {Button, Header, Welcome, Flex, Reset } from '..'
 
 const MyCV = () => { 
   return (
