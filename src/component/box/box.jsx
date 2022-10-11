@@ -1,6 +1,6 @@
 import {Text, Flex} from '..'
 
-const Box= ({aboutTitle, descriptionList, shadow, padding}) => {
+const Box= ({aboutTitle, descriptionList, shadow, padding, gap}) => {
   return (
     <div>
       <Text type='h3'>{aboutTitle}</Text>

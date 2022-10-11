@@ -1,15 +1,15 @@
 import * as S from './header.style';
 
-const Header = ({ color,font, sectionTitle, children }) => {
+const Header = ({ color, font, children }) => {
   return (
-    <S.HeaderWrapper color={color}>
-      <S.Header color={color} font={font}>{children}{sectionTitle}</S.Header>
-    </S.HeaderWrapper>
+    <S.Transparent color={color}>
+      <S.Header color={color} font={font}>{children}</S.Header>
+    </S.Transparent>
   );
 };
 
 Header.defaultProps = {
-  font:20,
+  font: 20,
   color: 'milanoRed',
 };
 
