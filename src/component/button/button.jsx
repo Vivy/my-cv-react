@@ -1,14 +1,17 @@
 import * as S from './button.style';
+import { Anchor } from '..';
 
-const Button = ({ link, icon, small, color, downloadButtonLabel}) => {
+const Button = ({ href, title, children, color}) => {
   return (
-      <>
-        {small ? <S.SmallButton href={link}>{icon}😀😀</S.SmallButton>
-        :
-        <S.Button color={color}>😀{downloadButtonLabel}</S.Button>
-        }
-      </>
+        <S.Button color={color}>
+          {!href && !title && children}{' '}
+          {href && title && (
+            <Anchor href={href} title={title}>
+              {children}
+            </Anchor>
+          )}
+        </S.Button>
   );
 };
 
-export default Button
+export default Button;
