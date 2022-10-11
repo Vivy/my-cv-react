@@ -1,4 +1,4 @@
-import { Box, Text, Button, Header, Welcome, Flex, Reset, Divider } from '..';
+import {Header, Divider, Welcome, Reset, Skills} from '..';
 
 const MyCV = () => {
   return (
@@ -6,7 +6,9 @@ const MyCV = () => {
       <Reset />
       <Header>Welcome to my CV</Header>
       <Welcome />
-      {/* <Divider height={16}/> */}
+      <Header>Tech I love to work with</Header>
+      <Divider height={16}/>
+      <Skills />
     </div>
   );
 };
