@@ -5,7 +5,7 @@
 const MyCV = () => { 
   return (
     <div>
-      {/* <Reset/> */}
+      <Reset/>
       <Header color='red' sectionTitle={content.welcome.sectionTitle}/>
       <Flex vertical align='center'>
         <Button small link='www.google.com'/>
