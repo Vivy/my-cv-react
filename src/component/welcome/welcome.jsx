@@ -48,7 +48,6 @@ const Welcome = () => {
         Subscribe
       </Button>
       <Divider height={16} />
-      <Header />
     </Flex>
   );
 };

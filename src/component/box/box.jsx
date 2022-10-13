@@ -1,17 +1,23 @@
-import {Text, Flex} from '..'
+import { Text, Flex, Pill } from '..';
 
-const Box= ({aboutTitle, descriptionList, shadow, padding, gap}) => {
+const Box = ({ aboutTitle, legend, descriptionList, shadow, padding, gap }) => {
   return (
-    <div>
-      <Text type='h3'>{aboutTitle}</Text>
-      <Flex padding={padding} gap={gap} vertical shadow={shadow}>
-        {(descriptionList || []).map((elements, key) => {
-          return <Text key={key}>{elements}</Text>
-        })}
+      <Flex vertical padding={padding}>
+        <Text type='h3'>{aboutTitle}</Text>
+        <Flex  gap={gap} vertical shadow={shadow}>
+          {descriptionList && descriptionList.map((element, key) => {
+            return <Text key={key}>{element}</Text>})}
+                {legend && legend.map(({color, label}, key) => {
+                  return (
+                    <Flex gap={8} padding={[8,0]} key={key}>
+                      <Pill color={color}>{key+1}</Pill>
+                      <Text>{label}</Text>
+                    </Flex>
+                  )
+                })}
+        </Flex>
       </Flex>
-    </div>
-  )
-}
+  );
+};
 
-
-export default Box
+export default Box;
