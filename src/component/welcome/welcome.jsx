@@ -1,4 +1,3 @@
-import * as S from './welcome.style';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Button, Header, Divider, Flex, Box, Text } from '..';

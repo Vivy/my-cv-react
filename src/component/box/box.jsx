@@ -9,7 +9,7 @@ const Box = ({ aboutTitle, legend, descriptionList, shadow, padding, gap }) => {
             return <Text key={key}>{element}</Text>})}
                 {legend && legend.map(({color, label}, key) => {
                   return (
-                    <Flex gap={8} padding={[8,0]} key={key}>
+                    <Flex gap={8} padding={8} key={key}>
                       <Pill color={color}>{key+1}</Pill>
                       <Text>{label}</Text>
                     </Flex>
