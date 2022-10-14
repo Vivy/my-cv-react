@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import * as S from './skills.style';
 import axios from 'axios';
 import { Box, Flex, Button, SkillContainer, Divider} from '..';
 
@@ -29,7 +28,7 @@ const Skills = () => {
         ></Box>
       <Divider gap={16}/>
         <SkillContainer s={ability.skillTypeList}/>
-        <Box legend={ability.color}>legend={ability.labels}</Box>
+        <Box aboutTitle={ability?.legend?.title} legend={ability.legend?.itemList} shadow padding={8}></Box>
     </Flex>
   );
 };

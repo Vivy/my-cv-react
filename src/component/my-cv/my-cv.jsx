@@ -1,4 +1,4 @@
-import {Header, Divider, Welcome, Reset, Skills} from '..';
+import {Header, Connect, Divider, Welcome, Reset, Skills} from '..';
 
 const MyCV = () => {
   return (
@@ -10,6 +10,8 @@ const MyCV = () => {
       <Divider height={16}/>
       <Skills />
       <Divider height={64}/>
+      <Header>Let`s Connect</Header>
+      <Connect/>
     </>
   );
 };
