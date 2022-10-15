@@ -1,11 +1,18 @@
 import * as S from './sociallist.style';
-import { Flex } from '../flex';
+import { Disc } from '..';
 
-const SocialList= ( { list } ) => {
+const List = ({ socialList }) => {
   return (
-      {list && list.map(({ icon, title, description, label, link }, key) => { return <S.SocialList icon={icon} title={title} link={link} key={key}>{label}{description}</S.SocialList>
-      } 
-    )
-  }
+    <>
+      {socialList &&
+        socialList.map(({ icon, title, description, label, link }, key) => (
+          <S.SocialRow icon={icon} title={title} link={link} key={key}>
+            <Disc>{label.slice(0,3)}</Disc>
+            {/* {description} */}
+          </S.SocialRow>
+        ))}
+    </>
+  );
+};
 
-export default SocialList
+export default List;
