@@ -1,28 +1,11 @@
 import * as S from './sociallist.style';
-import { Disc } from '..';
-import { useState } from 'react';
+import { Flex } from '../flex';
 
-const List = ({ socialList }) => {
-  const [selected, selecteaza] = useState({});
+const SocialList= ( { list } ) => {
   return (
-    <>
-      {selected.description && (
-        <div style={{gridColumn: '1/-1'}}>
-          <h1>neata</h1>
-          <div>{selected.description}</div>
-        </div>
-      )}
-      {socialList &&
-        socialList.map(({ icon, title, description, label, link }, key) => (
-          <S.SocialRow icon={icon} title={title} link={link} key={key}>
-            <Disc click={() => selecteaza({ description, title })}>
-              {label.slice(0, 3)}
-            </Disc>
-            {/* {description} */}
-          </S.SocialRow>
-        ))}
-    </>
-  );
-};
+      {list && list.map(({ icon, title, description, label, link }, key) => { return <S.SocialList icon={icon} title={title} link={link} key={key}>{label}{description}</S.SocialList>
+      } 
+    )
+  }
 
-export default List;
+export default SocialList
