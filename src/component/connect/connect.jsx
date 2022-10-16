@@ -26,10 +26,7 @@ const Connect = () => {
         aboutTitle={associate?.boxContent?.boxTitle}
         descriptionList={associate?.boxContent?.content}
       />
-      {/* <Grid>{associate.SocialList}</Grid> */}
-      <Grid>
-        <SocialList socialList={associate.socialList}/>
-      </Grid>
+      <SocialList socialList={associate.socialList}/>
     </Flex>
   );
 };
