@@ -1,0 +1,110 @@
+@import "variable";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?njln63') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?njln63') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?njln63##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="my-cv-"], [class*=" my-cv-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-cv-menu {
+  &:before {
+    content: $my-cv-menu; 
+  }
+}
+.my-cv-home {
+  &:before {
+    content: $my-cv-home; 
+  }
+}
+.my-cv-download {
+  &:before {
+    content: $my-cv-download; 
+  }
+}
+.my-cv-save {
+  &:before {
+    content: $my-cv-save; 
+  }
+}
+.my-cv-store {
+  &:before {
+    content: $my-cv-store; 
+  }
+}
+.my-cv-arrow {
+  &:before {
+    content: $my-cv-arrow; 
+  }
+}
+.my-cv-chevron-down {
+  &:before {
+    content: $my-cv-chevron-down; 
+  }
+}
+.my-cv-tiktok {
+  &:before {
+    content: $my-cv-tiktok; 
+  }
+}
+.my-cv-instagram {
+  &:before {
+    content: $my-cv-instagram;     
+    color: #e4405f;
+  }
+}
+.my-cv-linkedin {
+  &:before {
+    content: $my-cv-linkedin;     
+    color: #0077b5;
+  }
+}
+.my-cv-codewars {
+  &:before {
+    content: $my-cv-codewars;     
+    color: #ad2c27;
+  }
+}
+.my-cv-github {
+  &:before {
+    content: $my-cv-github; 
+  }
+}
+.my-cv-whatsapp {
+  &:before {
+    content: $my-cv-whatsapp;     
+    color: #25d366;
+  }
+}
+.my-cv-facebook {
+  &:before {
+    content: $my-cv-facebook;     
+    color: #1877f2;
+  }
+}
+.my-cv-youtube {
+  &:before {
+    content: $my-cv-youtube;     
+    color: #f00;
+  }
+}
+
