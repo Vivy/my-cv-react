@@ -1,8 +1,8 @@
 import * as S from './disc.style';
 
-const Disc = ({ children }) => {
+const Disc = ({ children, click }) => {
   return (
-    <S.Disc>
+    <S.Disc onClick={click}>
       <S.DiscContent>{children}</S.DiscContent>
     </S.Disc>
   );
