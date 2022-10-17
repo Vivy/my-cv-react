@@ -6,9 +6,9 @@ const Info = ({ label, title, description, icon, children }) => {
       <S.Info  title={title} icon={icon} label={label} description={description}>
         {children}
       <S.Line/>
-      <Info icon={icon} label={label}>
+      <S.Info icon={icon} label={label}>
         asdad
-      </Info>
+      </S.Info>
       </S.Info>
     </S.InfoTransparent>
   );

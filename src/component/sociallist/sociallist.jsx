@@ -1,5 +1,5 @@
 import * as S from './sociallist.style';
-import { Disc, Grid, Info, Text, Line } from '..';
+import { Disc, Grid, Info, Text } from '..';
 import { useState } from 'react';
 
 const List = ({ socialList }) => {
