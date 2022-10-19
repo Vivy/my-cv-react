@@ -12,6 +12,7 @@ const MyCV = () => {
       <Divider height={64}/>
       <Header>Let`s Connect</Header>
       <Connect/>
+      <Divider height={64}/>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Flex, Grid, Disc, Button, Box, SocialList } from '..';
+import { Flex, Grid, Disc, Button, Box, SocialList, Icon } from '..';
 
 const Connect = () => {
   const [associate, update] = useState({});
@@ -19,17 +19,13 @@ const Connect = () => {
         href='https://www.youtube.com/watch?v=als7xoyNyoE'
         title='Best chill song'
         color='transparent'
-      >
-        😃
+      >🤣
       </Button>
       <Box
         aboutTitle={associate?.boxContent?.boxTitle}
         descriptionList={associate?.boxContent?.content}
       />
-      {/* <Grid>{associate.SocialList}</Grid> */}
-      <Grid>
-        <SocialList socialList={associate.socialList}/>
-      </Grid>
+      <SocialList socialList={associate.socialList}/>
     </Flex>
   );
 };

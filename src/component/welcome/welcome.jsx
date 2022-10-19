@@ -25,7 +25,8 @@ const Welcome = () => {
       <Text type='h1'>{summary.nameTitle}</Text>
       <Text type='h2'>{summary.jobTitle}</Text>
       <Button
-        href='C:\Users\LENOVO\Desktop\CV`s\'
+        download='assets'
+        href='assets'
         title='Let`s meet ME'
         color='funGreen'
       >

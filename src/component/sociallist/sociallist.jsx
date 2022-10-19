@@ -1,27 +1,28 @@
 import * as S from './sociallist.style';
-import { Disc } from '..';
+import { Disc, Grid, Info, Text } from '..';
 import { useState } from 'react';
 
 const List = ({ socialList }) => {
   const [selected, selecteaza] = useState({});
   return (
-    <>
-      {selected.description && (
-        <div style={{gridColumn: '1/-1'}}>
-          <h1>neata</h1>
-          <div>{selected.description}</div>
-        </div>
-      )}
+    <Grid>
       {socialList &&
         socialList.map(({ icon, title, description, label, link }, key) => (
           <S.SocialRow icon={icon} title={title} link={link} key={key}>
             <Disc click={() => selecteaza({ description, title })}>
               {label.slice(0, 3)}
             </Disc>
-            {/* {description} */}
           </S.SocialRow>
         ))}
-    </>
+      <Grid>
+        {selected.description && (
+          <Info icon={selected.icon} link={selected.link}>
+            <Text type='h3'>{selected.title}</Text>
+            <Text>{selected.description}</Text>
+          </Info>
+        )}
+      </Grid>
+    </Grid>
   );
 };
 
