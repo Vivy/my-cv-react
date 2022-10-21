@@ -38,8 +38,12 @@ const Welcome = () => {
         you so everytone gets helped
       </Header>
       <Divider height={16} />
-      <Box padding={8} gap={8} aboutTitle={summary.aboutTitle} descriptionList={summary.descriptionList}>
-      </Box>
+      <Box
+        padding={8}
+        gap={8}
+        aboutTitle={summary.aboutTitle}
+        descriptionList={summary.descriptionList}
+      ></Box>
       <Button
         color='milanoRed'
         href='https://www.youtube.com/watch?v=P7pTqssHass'
